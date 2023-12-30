@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9e3e3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000000;
+            color: #ff0000;
+            padding: 1em;
+            text-align: center;
+            animation: headerAnimation 1s ease-in-out;
+        }
+
+        @keyframes headerAnimation {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 1em;
+            animation: navAnimation 1s ease-in-out;
+        }
+
+        @keyframes navAnimation {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 1em;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        nav li:hover {
+            transform: scale(1.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #ff0000;
+        }
+
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Gaya tambahan khusus untuk halaman produk */
+        .produk {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .produk-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            width: 300px;
+        }
+        .produk-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .produk-item-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .produk-item-buttons button {
+            width: 30%;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .beli-button {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .pesan-button {
+            background-color: #2196F3;
+            color: white;
+        }
+        .keranjang-button {
+            background-color: #FF9800;
+            color: white;
+        }
+        section {
+            padding: 20px;
+            text-align: center; /* Center text within the section */
+        }
+
+        /* Add a custom animation to the heading */
+        section h2 {
+            animation: headingAnimation 1s ease-in-out;
+        }
+
+        @keyframes headingAnimation {
+            from {
+                opacity: 0;
+                transform: translateY(-20px) scale(0.8);
+                color: #ff0000; /* Start with a different color */
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+                color: #000000; /* End with the original color */
+            }
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>HELMET STORE</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="checkout">Checkout</a></li>
+                <li><a href="keranjang">keranjang</a></li>
+                <li><a href="pesan">pesan</a></li>
+                <li><a href="login">login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>SILAHKAN PILIH BARANG YANG ANDA BUTUHKAN</h2>
+        <div class="produk">
+            <div class="produk-item">
+                <img src="https://moxa.id/blog/wp-content/uploads/2023/07/Shoei-X-14-Marquez-America-TC2.webp" alt="Produk 1">
+                <h3>Produk 1</h3>
+                <h3>15 Helm Termahal di Dunia, Ada yang Sampai Miliaran</h3>
+                <p>Harga: RP.100k</p>
+                <div class="produk-item-buttons">
+                    <button onclick="window.location.href='checkout'" style="background-color: #000000; color: white;">beli</button>
+                    <button onclick="window.location.href='pesan'" style="background-color: #5d5a56; color: white;">pesan</button>
+                    <button onclick="window.location.href='keranjang'" style="background-color: #ff0000; color: white;">Keranjang</button>
+                </div>
+            </div>
+            <div class="produk-item">
+                <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//92/MTA-11040948/nolan_nolan_n405_classic_helm_half_face_full01_eqvrr6gm.jpg" alt="Produk 2">
+                <h3>Produk 2</h3>
+                <h3>Jual Nolan N405 Classic Helm Half Face - Metal White L </h3>
+                <p>Harga: RP.150k</p>
+                <div class="produk-item-buttons">
+                    <button onclick="window.location.href='checkout'" style="background-color: #000000; color: white;">beli</button>
+                    <button onclick="window.location.href='pesan'" style="background-color: #5d5a56; color: white;">pesan</button>
+                    <button onclick="window.location.href='keranjang'" style="background-color: #ff0000; color: white;">Keranjang</button>
+                </div>
+            </div>
+
+            <div class="produk-item">
+                <img src="https://images.tokopedia.net/img/cache/700/product-1/2020/3/2/788481/788481_cd80fbd3-eaa6-4c30-9c52-9bc53502fba8_1054_1054.jpg" alt="Produk 3">
+                <h3>Produk 3</h3>
+                <h3>Jual Helm Half Face Nolan N40.5 N405 Classic Black 03 Double.Visor/h3>
+                <p>Harga: RP.900k</p>
+                <div class="produk-item-buttons">
+                    <button onclick="window.location.href='checkout'" style="background-color: #000000; color: white;">beli</button>
+                    <button onclick="window.location.href='pesan'" style="background-color: #5d5a56; color: white;">pesan</button>
+                    <button onclick="window.location.href='keranjang'" style="background-color: #ff0000; color: white;">Keranjang</button>
+                </div>
+            </div>
+
+            <div class="produk-item">
+                <img src="https://imgcdnblog.carmudi.com.ph/motovaganza/wp-content/uploads/2019/05/Shark.jpg" alt="Produk 4">
+                <h3>Produk 4</h3>
+                <h3>helm moster terbaru di 2023</h3>
+                <p>Harga: RP.800k</p>
+                <div class="produk-item-buttons">
+                    <button onclick="window.location.href='checkout'" style="background-color: #000000; color: white;">beli</button>
+                    <button onclick="window.location.href='pesan'" style="background-color: #5d5a56; color: white;">pesan</button>
+                    <button onclick="window.location.href='keranjang'" style="background-color: #ff0000; color: white;">Keranjang</button>
+                </div>
+            </div>
+
+            <div class="produk-item">
+                <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//82/MTA-3221263/shark_shark-race-r-pro-carbon-gp-winter-test-redding-helm-full-face_full03.jpg" alt="Produk 5">
+                <h3>Produk 5</h3>
+                <h3>helm monseter termahal di 2023 </h3>
+                <p>Harga: RP.300k</p>
+                <div class="produk-item-buttons">
+                    <button onclick="window.location.href='checkout'" style="background-color: #000000; color: white;">beli</button>
+                    <button onclick="window.location.href='pesan'" style="background-color: #5d5a56; color: white;">pesan</button>
+                    <button onclick="window.location.href='keranjang'" style="background-color: #ff0000; color: white;">Keranjang</button>
+                </div>
+            </div>
+
+            <div class="produk-item">
+                <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2023/10/6/62ca0939-07cd-411f-bbdc-a48d4eb26d31.jpg" alt="Produk 6">
+                <h3>Produk 6</h3>
+                <h3>Jual HELM Shark Race-R Pro GP Redding Gold Carbon LIMITED</h3>
+                <p>Harga: RP.500k</p>
+                <div class="produk-item-buttons">
+                    <button onclick="window.location.href='checkout'" style="background-color: #000000; color: white;">beli</button>
+                    <button onclick="window.location.href='pesan'" style="background-color: #5d5a56; color: white;">pesan</button>
+                    <button onclick="window.location.href='keranjang'" style="background-color: #ff0000; color: white;">Keranjang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function beliProduk() {
+            alert("Produk berhasil ditambahkan ke keranjang belanja!");
+        }
+
+        function pesanProduk() {
+            alert("Produk berhasil dipesan!");
+        }
+
+        function tambahKeKeranjang() {
+            alert("Produk berhasil ditambahkan ke keranjang!");
+        }
+    </script>
+
+
+
+</body>
+
+</html>
